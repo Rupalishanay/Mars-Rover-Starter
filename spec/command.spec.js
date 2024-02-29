@@ -9,11 +9,11 @@ describe("Command class", function() {
     expect( function() { new Command();}).toThrow(new Error('Command type required.'));
   });
   it("constructor sets command type", function () {
-    let Object = new Command('SOME_COMMAND');
-    expect(Object.commandType).toBe('SOME_COMMAND');
+    let Object = new Command('First_COMMAND');
+    expect(Object.commandType).toBe('First_COMMAND');
   });
   it("constructor sets a value passed in as the 2nd argument", function () {
-    let Object = new Command('ANOTHER_COMMAND', 'SOME_VALUE');
+    let Object = new Command('Second_COMMAND', 'SOME_VALUE');
     expect(Object.value).toBe('SOME_VALUE');
   });
 
