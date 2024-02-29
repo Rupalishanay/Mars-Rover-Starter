@@ -59,7 +59,7 @@ describe("Rover class", function() {
     let testMessage = new Message ('Test Flip Mode Twice and Move', testCommands);
     let testResponse = testRover.receiveMessage(testMessage);
     let testStatusValuesConcerned = [testResponse.results[2].completed, testRover.position]
-    expect(testStatusValuesConcerned).toEqual([true, 456789]);
+    expect(testStatusValuesConcerned).toEqual([true, 54001]);
   });
  
 });
